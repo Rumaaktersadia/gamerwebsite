@@ -103,13 +103,16 @@ h2{
     padding:20px;
 }
 .videogame-images{
-    /* display:flex; */
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
     justify-content: space-around;
     /* margin-left:20px; */
     align-items: center;
+}
+.videogame-images:hover{
+transition:opacity 0.3sec ease-in-out ;
+background: #3C354F;
 }
 .hero-container{
     /* display: flex; */
@@ -150,10 +153,6 @@ h2{
     
 }
 
-
-
-
-
 .game-area{
     margin-left: 50px;
     padding:60px
@@ -187,15 +186,6 @@ h2{
 
 
 
-
-
-
-
-
-
-
-
-
 .footer{
   
     padding: 30px;
@@ -216,3 +206,4 @@ align-items: center;
 .social-icon{
     color: #fff;
 }
+@media screen and (max-width:1440px)
