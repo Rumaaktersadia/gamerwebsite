@@ -4,22 +4,32 @@
     padding:0;
 }
 
+span{
+    color: #FF42A5;
+}
 /* nav area */
+.nav-container{
+    display:flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: #fff;
+    margin-left: 20px;
+}
+header{
+    background-image:url(images/Group-14.png) ;
+}
 .logo-container{
    display: flex;
    padding:20px;
-   margin-left:20px;
+   margin-left:0px;
+   
 } 
 .G{
     color: #FF42A5;
 }
-.nav-container{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
+
  
-}
+
 
 h3{
     margin-left: 15px;
@@ -28,6 +38,7 @@ h3{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    margin-right: 30px;
 }
 a{ 
     text-decoration: none;
@@ -47,8 +58,8 @@ a{
     
 }
 .banner-title{
-    /* align-items: center; */
-    margin-left: 90px;
+    align-items: center;
+    margin-left: 100px;
 }
 h2{
     padding:2px;
@@ -96,7 +107,6 @@ button{
 .video-title{
   justify-content: center;
   margin-left:450px;
-
   padding:20px;
 }
 h2{
@@ -106,14 +116,11 @@ h2{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
     /* margin-left:20px; */
     align-items: center;
 }
-.videogame-images:hover{
-transition:opacity 0.3sec ease-in-out ;
-background: #3C354F;
-}
+
 .hero-container{
     /* display: flex; */
 }
@@ -125,9 +132,6 @@ background: #3C354F;
 .hero{
   
 }
-.angelaimg{
-    
-}
 
 
 .hero2-section{
@@ -137,15 +141,16 @@ background: #3C354F;
 }
 
 .hero2-container{
- 
+    display: flex;
+    position:relative
 }
 .hero2img{
-    position: relative;
-}
-.catimg{
     position: absolute;
     bottom: 100px;
     left:30px;
+}
+.catimg{
+    
 
 }
 .children-container{
@@ -153,11 +158,12 @@ background: #3C354F;
     background-color: #FF42A5;
     /* padding:50px; */
     justify-content: flex-start;
-
+    align-items: center;
 }
 .children-content{
     color:white;
     display: flex;
+   
     
 }
 
@@ -195,9 +201,6 @@ background: #3C354F;
 
 }
 
-
-
-
 .footer{
   
     padding: 30px;
@@ -233,4 +236,7 @@ margin:0 5px;
     margin:10px 10px;
         color: #fff;
 }
-@media screen and (max-width:1440px)
+@media screen and (max-width:1440px) and (min-width:576px){
+    flex-direction: column;
+    
+}
